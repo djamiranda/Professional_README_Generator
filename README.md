@@ -17,5 +17,3 @@
 
   Video:
   [Google Drive Link](https://drive.google.com/file/d/1uHbo7ahQFqRXLENmiI6rh3f2JNGsaveP/view?usp=sharing)
-
-  https://drive.google.com/file/d/1uHbo7ahQFqRXLENmiI6rh3f2JNGsaveP/view?usp=sharing
