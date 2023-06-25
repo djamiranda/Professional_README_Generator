@@ -7,43 +7,43 @@ const generateMarkdown = require("./utils/generateMarkdown");
 const questions = [
     {
         type: "input",
-        name: "Title",
-        message: "Please enter the Project Title",
+        name: "title",
+        message: "Please enter the Project Title:",
       },    
       {
         type: "input",
-        name: "Description",
-        message: "Please enter project description",
+        name: "description",
+        message: "Please enter description:",
       },
       {
         type: "input",
-        name: "Installation",
-        message: "Please enter installation steps",
+        name: "installation",
+        message: "Please enter installation instructions:",
       },
       {
         type: "input",
-        name: "Usage",
-        message: "Please provide instructions & examples for use",
+        name: "usage",
+        message: "Please enter usage information:",
       },
       {
         type: "list",
-        name: "License",
-        message: "Please choose license for project",
-        choices: ["No License", "GNU General Public License v3.0", "MIT License", "Apache License 2.0"],
+        name: "license",
+        message: "Please choose license for project:",
+        choices: ["", "GNU General Public License v3.0", "MIT License", "Apache License 2.0"],
           },
       {
         type: "input",
-        name: "Contributing",
-        message: "Please enter project contributors",
+        name: "contributing",
+        message: "Please enter contribution guidelines:",
       },
       {
         type: "input",
-        name: "Tests",
-        message: "Please enter project tests",
+        name: "tests",
+        message: "Please enter test instructions:",
       },
       {
         type: "input",
-        name: "Email",
+        name: "email",
         message: "Please enter email address",
       },
       {
@@ -59,9 +59,9 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {
-  fs.appendFile(`${fileName}.md`, generateMarkdown(data), (err) =>
-  err ? console.log(err) : console.log(`${fileName}.md was successfully created`)
+function writeToFile(filename, data) {
+  fs.appendFile(`${filename}.md`, generateMarkdown(data), (err) =>
+  err ? console.log(err) : console.log(`${filename}.md was successfully created.  Add screenshot to assets/images folder`)
   )};
 
 // TODO: Create a function to initialize app
@@ -69,7 +69,7 @@ function init() {
   inquirer 
   .prompt(questions)
   .then((response) => {
-      writeToFile(response.fileName, response);
+      writeToFile(response.filename, response);
   })
   .catch(err => {
       console.log(err)
