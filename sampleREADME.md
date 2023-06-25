@@ -2,7 +2,7 @@
   [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
   
   ## Description:
-  Description Text
+  Description_Text
 
   ![screenshot.png from assets/images should be here](./assets/images/screenshot.png)
   
@@ -20,10 +20,10 @@
   - [Questions](#Questions)
 
   ## Installation:
-  Installation Instructions
+  Installation_Instructions
   
   ## Usage:
-  Usage Information
+  Usage_Information
   
   ## License:
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
@@ -31,10 +31,10 @@
 https://opensource.org/licenses/Apache-2.0
 
   ## Contributing:
-  Contribution Guidelines
+  Contribution_Guidelines
   
   ## Tests:
-  Test Instructions
+  Test_Instructions
   
   ## Questions:
   
