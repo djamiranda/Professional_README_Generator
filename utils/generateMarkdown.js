@@ -15,8 +15,7 @@ switch (license) {
         return "";
 }
 }
-
-// create license section link in table of contents, only created if license type is provided by user
+// function to add license to table of contents, if selected
 function renderLicenseTable(license) {
   if (!license) {
     return "";
@@ -60,6 +59,8 @@ ${renderLicenseLink(license)}`
 }
 
 // TODO: Create a function to generate markdown for README
+
+// added repo link using the github user & project title
 function generateMarkdown(data) {
   return `# ${data.title}
   ${renderLicenseBadge(data.license)}

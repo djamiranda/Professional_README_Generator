@@ -59,6 +59,7 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
+// creates file based on user input, allowing for unique README files
 function writeToFile(filename, data) {
   fs.appendFile(`${filename}.md`, generateMarkdown(data), (err) =>
   err ? console.log(err) : console.log(`${filename}.md was successfully created.  Add screenshot to assets/images folder`)
@@ -66,6 +67,7 @@ function writeToFile(filename, data) {
 
 // TODO: Create a function to initialize app
 function init() {
+  console.log("***Professional README Generator***");
   inquirer 
   .prompt(questions)
   .then((response) => {
